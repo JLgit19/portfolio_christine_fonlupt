@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Christine Fonlupt - bio</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.js"></script>
+
+    <script>
+        // On page load or when changing themes, best to add inline in `head` to avoid FOUC
+        if (localStorage.getItem('color-theme') === 'dark' || (!('color-theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+            document.documentElement.classList.add('dark');
+        } else {
+            document.documentElement.classList.remove('dark')
+        }
+    </script>
+
+    <style>
+        body 
+        {
+            background-color: #ffffff
+;
+        }
+    </style>
+
+</head>
+<body>
+    
+<nav class="backdrop-blur-sm bg-white/30 dark:bg-gray-900/60 fixed w-full z-20 top-0 left-0 border-b border-gray-200 dark:border-gray-600">
+    <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4 border-b border-white border-dashed">
+    <a href="index.html"">
+        <div><h1 class="text-xl text-gray-900 dark:text-white">Christine Fonlupt</h1></div>
+        <div><h3 class="text-l text-gray-900 dark:text-white">pianiste</h3></div>
+    </a>
+    <div>
+        <button data-collapse-toggle="navbar-sticky" type="button" class="inline-flex items-center p-2 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-sticky" aria-expanded="false">
+            <span class="sr-only">Open main menu</span>
+            <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
+        </button>
+    </div>
+    </div>
+    <div class="flex justify-center">
+        <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
+            <ul class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white dark:bg-gray-800/0 md:dark:bg-gray-900/0 dark:border-gray-700/50">
+            <li>
+                <a href="index.html" class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Accueil</a>
+            </li>
+            <li>
+                <a href="Biographie.html" class="block py-2 pl-3 pr-4 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500" aria-current="page">Biographie</a>
+            </li>
+            <li>
+                <a href="agenda.html" class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Agenda</a>
+            </li>
+            <li>
+                <a href="galerie.html" class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Galerie</a>
+            </li>
+            </ul>
+        </div>
+    </div>
+    </nav>
+
+
+
+    
+
+<div class="container mx-auto px-4 justify-center mt-40">
+
+
+    
+    <div class="mb-4 border-b border-gray-20">
+        <ul class="flex flex-wrap -mb-px text-sm font-medium text-center" id="myTab" data-tabs-toggle="#myTabContent" role="tablist">
+            <li class="mr-2" role="presentation">
+                <button class="inline-block p-4 border-b-2 rounded-t-lg" id="profile-tab" data-tabs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">Biographie</button>
+            </li>
+            <li class="mr-2" role="presentation">
+                <button class="inline-block p-4 border-b-2 border-transparent rounded-t-lg hover:text-gray-600 hover:border-gray-300" id="dashboard-tab" data-tabs-target="#dashboard" type="button" role="tab" aria-controls="dashboard" aria-selected="false">Pédagogie</button>
+            </li>
+            <li class="mr-2" role="presentation">
+                <button class="inline-block p-4 border-b-2 border-transparent rounded-t-lg hover:text-gray-600 hover:border-gray-300" id="settings-tab" data-tabs-target="#settings" type="button" role="tab" aria-controls="settings" aria-selected="false">jeunes publics</button>
+            </li>
+        </ul>
+    </div>
+    <div id="myTabContent">
+        <div class="hidden p-4 rounded-lg bg-gray-50 " id="profile" role="tabpanel" aria-labelledby="profile-tab">
+            <div class="m-2 bg-gray-50 p-6 md:p-12 lg:p-24 rounded-lg border-dashed border-2 border-sky-500">
+                <div class="flex flex-col items-center space-y-4">
+                    <img src="/img/galerie_5.jpg" alt="Photo de profil" class="w-32 h-32 object-cover rounded-full border-2 border-gray-300">
+                    <h1 class="text-3xl font-semibold text-gray-800 text-center">Christine Fonlupt</h1>
+                    <h2 class="text-xl text-gray-600 text-center">Pianiste</h2>
+                </div>
+                <div class="mt-6 space-y-4">
+                    <h3 class="text-2xl font-semibold text-gray-800 text-center">Biographie</h3>
+                    <p class="text-gray-600">
+                        Pianiste, chambriste, directrice de projet, Christine Fonlupt s’impose comme une figure du piano moderne. Récemment, elle a joué sur des scènes variées comme la salle Cortot (2023 avec le comédien William Mesguich), le Théâtre du Lucernaire ou le Festival d’Avignon (2019, spectacle avec la chanteuse Anne Baquet), Le Festival Berlioz (2023, spectacle George Sand/Frédéric Chopin), la Philharmonie de Paris avec Piano Orchestra (2019, 2021, 2023), tournée à Prague, Vienne, Terezin (2022 répertoire des musiciens juifs ayant composé au camp de Terezin). <br> <br>
+        
+                        Côté discographique, elle a enregistré un album de piano solo sur les œuvres de Fauré, Debussy, Chausson des années 1890 (2023 Passavant Music), deux albums de tango argentin avec Encuentro Tango Quintet (2017 Buda Music et 2023 Passavant Music), ainsi que les œuvres de Eric Lebrun (2022 Chanteloup). <br> <br>
+                        Depuis 2019, elle organise Piano Orchestra, un projet un peu fou et inédit qui réunit 100 pianistes sur scène, autour d'un répertoire spécialement créé et dédié pour cette formation. Elle signe les arrangements pour de nombreuses pièces de pianos à 4 mains et plus pour la Philharmonie de Paris. <br> <br>
+                        Pendant le confinement, elle forme un trio original avec ses complices du 11e arrondissement de Paris, Valérie Aimard (violoncelle) et Anne Baquet (soprano) et monte un spectacle de cabaret-concert « La girafe confite », ce spectacle se produit actuellement en France. Depuis septembre 2022, elle joue dans un nouveau spectacle sur l’autobiographie de George sand « Histoire de ma vie » où elle r éalise la sélection musicale et joue au piano des ouvres de Frédéric Chopin, avec la comédienne Céline Dupas-Hutin et la collaboration artistique de William Mesguich. <br> <br>
+        
+                        La pianiste Christine Fonlupt se forme auprès de Christian Bernard et Janine Collet au CRR de Grenoble, puis auprès de Bruno Rigutto et Nicholas Angelich au CNSMD de Paris. Elle y obtient ses premiers prix de piano et musique de chambre avant d’intégrer le cycle de perfectionnement de musique de chambre au CNSM de Lyon. Elle reçoit également l’enseignement de Marie-Françoise Buquet, Brigitte Engerer et Jean-Claude Pennetier, bénéficiant ainsi d’une connaissance approfondie du répertoire français du XXe. Elle obtient son CA de professeur de piano ainsi qu’une Licence de Musicologie. <br> <br>
+        
+                        Son éclectisme musical la conduit à se produire sur de nombreuses scènes (Paris, France, Autriche, Chine, Allemagne, Italie, Maroc…). Très vite, elle travaille en tant que pianiste de scène pour de nombreuses productions théâtrales (Opéra Comique, Opéra Bastille, Comédie Française…) Elle a monté de très nombreux spectacles Jeunes Publics dont quatre qui ont été sélectionnés aux Jeunesses Musicales de France (Histoire de Babar, La Petite sirène, La belle et la bête, Aladin) <br> <br>
+                        De 2000 à 2010, elle est directrice artistique du Festival des Nuits musicales Catalanes à Perpignan où de nombreux musiciens la rejoignent sur scène (Anne Queffélec, Olivier Charlier, Roland Pidoux, Patrice Fontanarosa, Emmanuelle Bertrand, Pascal Amoyel, Laurent Cabasso, Marielle Nordmann…) <br> <br>
+        
+                        Elle est directrice de l’association Arteka 11 qui organise de nombreux concerts en France. Soucieuse de transmettre ses passions aux musiciens de demain, elle enseigne au CNSM de Paris et au CRR de Saint Maur des Fossés (94).
+                    </p>
+                </div>
+        
+                <div class="mt-6 space-y-4">
+                    <h3 class="text-2xl font-semibold text-gray-800">Coordonnées</h3>
+                    <p class="text-gray-600">
+                        Email: c.fonlupt-lehmann@cnsmdp.fr <br>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="hidden p-4 rounded-lg bg-gray-50" id="dashboard" role="tabpanel" aria-labelledby="dashboard-tab">
+            <div class="m-2 bg-gray-50 p-6 md:p-12 lg:p-24 rounded-lg border-dashed border-2 border-sky-500">
+                <div class="mt-6 space-y-4">
+                    <h3 class="text-2xl font-semibold text-gray-800">Pédagogie</h3>
+                    <p class="text-gray-600">
+                        Toujours engagée dans la transmission du savoir, Christine Fonlupt enseigne depuis 20 ans et a formé de nombreuses générations de pianistes. <br>
+                        Elle a reçu à Grenoble l'enseignement de Jeanine Collet et de Christian Bernard (élève de V.Perlemuter) puis, au CNSM de Paris, celui de Bruno Rigutto (disciple de Samson François). <br>
+                        Au cours de ses études, elle a été également conseillée par Jean-Philippe Collard, Brigitte Engerer, Nicholas Angelich et par de nombreux autres musiciens. Sortie du CNSM de Paris avec un premier prix de piano et de musique de chambre, elle a d'abord été en poste à Bourges, Nancy et Paris. <br> <br>
+    
+                        Christine Fonlupt enseigne actuellement au Conservatoire à Rayonnement Régional (CRR) de Saint-Maur-des-Fossés depuis 2003, date de sa nomination comme professeur de piano. Ce conservatoire accueille chaque année 1200 élèves auxquels il propose des cursus complets et variés. De nombreux étudiants intègrent tous les ans les CNSM de Paris et de Lyon dans les diverses disciplines enseignées, ce qui crée une forte émulation. Situé au 25 de la rue Krüger, à côté du théâtre de la ville et à proximité du RER, il offre une riche saison musicale. Le CRR accueille des classes à horaires aménagés et se propose d'être un chemin vers la professionnalisation des jeunes musiciens. Le CRR est dirigé par Jean Roudon. <br> <br>
+    
+                        Christine Fonlupt est également assistante au Conservatoire National de Musique et de Danse de Paris (CNSMDP). Elle y enseigne la lecture à vue pour les chanteurs depuis 2004. A partir de textes issus de tous les répertoires, du baroque au contemporain, cette discipline aborde la formation de l'oreille, la lecture chantée dans différentes langues et apporte des notions d'harmonie et de théorie de la musique. Haut lieu de formation en France et en Europe, le CNSMDP a formé des générations de musiciens aux carrières internationales. Situé au 209, avenue Jean Jaurès 75019 Paris, à côté de la cité de la musique et de la nouvelle philharmonie, il est dirigé par Bruno Mantovani. <br> <br>
+    
+                        Christine Fonlupt participe régulièrement à des Académies d'été , à Tignes , dans le cadre du festival Musicalp (musicalp) et à Chanac (amusel) <br> <br>
+    
+                        Christine Fonlupt enseigne à de nombreux étudiants en Formation dans le cadre des CEFEDEM et des CNSM. Son expérience riche et structurée lui permet de proposer une préparation individualisée et spécifique pour les concours du DE et du CA. <br> <br>
+    
+                        Christine Fonlupt participe à de nombreux jury et recrutements.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="hidden p-4 rounded-lg bg-gray-50" id="settings" role="tabpanel" aria-labelledby="settings-tab">
+            <div class="m-2 bg-gray-50 p-6 md:p-12 lg:p-24 rounded-lg border-dashed border-2 border-sky-500">
+                <div class="mt-6 space-y-4">
+                    <h3 class="text-2xl font-semibold text-gray-800">jeunes publics</h3>
+                    <p class="text-gray-600">
+                        Depuis l'année 2000, Christine Fonlupt participe à des spectacles Jeunes Publics qui ont tourné en France et en Afrique francophone. <br> Ils ont tous obtenu un vif succès et ont été joués plus d'une centaine de fois.
+                    </p>
+                    <li><strong>L'Histoire de Babar</strong> de Francis Poulenc avec Karine Texier (comédienne) et Stéphanie Fontanarosa (piano à 4 mains).</li>
+                    <li><strong>Ma mère l'Oye</strong> de Maurice Ravel avec Karine Texier (comédienne) et Stéphanie Fontanarosa (piano à 4 mains).</li>
+                    <li><strong>Sur les pas d'Alice</strong> musiques extraites du répertoire classique, de Bach à Kurtag avec Karine Texier (comédienne) et Stéphanie Fontanarosa (piano à 4 mains).</li>
+                    <li><strong>La petite sirène</strong> d'Andersen, musique originale de Graciane Finzi, avec Dominique Juchors (violon), Olivier-Pierre Vergnaud (clarinette) et Clara Pirali (comédienne).</li>
+                    <li><strong>Aladin</strong> musique originale de Pierre Charvet, texte et mise en scène Jeanne Roth, avec Arnaud Lehmann (violon), Eric Fonteny (violoncelle) et Kate Combault (soprano). Le spectacle Aladin peut être visionné sur Youtube</li>
+                    <li><strong>La Belle et la Bête</strong> musique originale d'Olivier Kaspar, texte Julie Berge, mise en scène Gersende Michel, avec Arnaud Lehmann (violon), Cécile Jolin (basson), Valeria Altaver (soprano); spectacle en tournée, une coproduction de l'AMDC et des Jeunesses Musicales de France (JMF). Le spectacle La Belle et la Bête peut être visionné sur Youtube</li>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    
+    
+
+
+</div>
+
+
+
+
+
+<footer class="bg-white rounded-lg shadow m-4 dark:bg-gray-800">
+    <div class="w-full mx-auto max-w-screen-xl p-4 md:flex md:items-center md:justify-between">
+        <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2023 <a href="#" class="hover:underline">Christine Fonlupt™</a>. All Rights Reserved.
+    </span>
+    <ul class="flex flex-wrap items-center mt-3 text-sm font-medium text-gray-500 dark:text-gray-400 sm:mt-0">
+        <li>
+            <p>c.fonlupt-lehmann@cnsmdp.fr</p>
+        </li>
+    </ul>
+    </div>
+</footer>
+
+</body>
+</html>
